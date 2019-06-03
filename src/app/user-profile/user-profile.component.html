@@ -1,7 +1,144 @@
-<div class="main-content">
+<nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top">
   <div class="container-fluid">
+      <div class="navbar-wrapper">
+             <i class="material-icons">person</i> 
+        <a class="navbar-brand" href="#">Ganadero</a>
+      </div>
+      <button mat-raised-button class="navbar-toggler" type="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon icon-bar"></span>
+          <span class="navbar-toggler-icon icon-bar"></span>
+          <span class="navbar-toggler-icon icon-bar"></span>
+      </button>
+  </div>
+  </nav>
+
+<div class="main-content">  
+  <div class="container-fluid">
+          <button class="btn btn-danger btn-round float-right" data-toggle="modal" data-target="#exampleModal">
+              <i class="material-icons">add_circle</i> Nuevo Ganadero
+             </button>
+             <br>
+             <br>
+             <br>
+             <!-- Modal -->
+             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Registrar Nuevo Ganadero</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                     </button>
+                   </div>
+                   <div class="modal-body">
+                      <form>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputNombre" aria-describedby="emailHelp" placeholder="Nombre (s)">
+                          </div>
+                          <div class="row">
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="Ap Paterno">
+                              </div>
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="Ap Materno">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputCorreo" placeholder="Correo">
+                              </div>
+                              <label class="my-1 mr-2" for="inlineFormCustomSelectPref">
+                              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                  <option selected>Años de Actividad</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="3">4</option>
+                                  <option value="3">5</option>
+                                </select>
+                                </label>
+                        </form>
+                   </div>
+                   <div class="modal-footer">
+                      <button type="button"  class="btn btn-danger btn-round">
+                          <i class="material-icons">done</i> Guardar y Enviar
+                        </button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+      <!--<a class="nav-link text-right font-weight-bold btn-link" ><u>Nuevo Ganadero</u></a>-->
       <div class="row">
-          <div class="col-md-8">
+          <div class="card mb-3 sm-6 mr-3" style="max-width: 348px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./assets/img/faces/marc.jpg" class="card-img" alt="...">
+                </div>
+                
+                <div class="col-md-8">
+                  <div class="card-body">
+                      <button type="button" class="ml-auto close">
+                          <i class="material-icons ">delete</i>
+                          </button>
+                          <button type="button" class="ml-auto close">
+                            <i class="material-icons ">edit</i>
+                            </button>
+                         <br>
+                    <h5 class="card-title">Pedro Pony</h5>
+                    <p class="card-text">Rancho 3 estrellas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="card mb-3 sm-6 mr-3" style="max-width: 348px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="./assets/img/faces/marc.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <button type="button" class="ml-auto close">
+                          <i class="material-icons ">delete</i>
+                          </button>
+                          <button type="button" class="ml-auto close">
+                            <i class="material-icons ">edit</i>
+                            </button>
+                             <br>
+                        <h5 class="card-title">Pedro Pony</h5>
+                        <p class="card-text">Rancho 3 estrellas</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3 sm-6" style="max-width: 348px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="./assets/img/faces/marc.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <button type="button" class="ml-auto close">
+                          <i class="material-icons ">delete</i>
+                          </button>
+                          <button type="button" class="ml-auto close">
+                            <i class="material-icons ">edit</i>
+                            </button>
+                             <br>
+                        <h5 class="card-title">Pedro Pony</h5>
+                        <p class="card-text">Rancho 3 estrellas</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+                
+          <!--<div class="col-md-8">
               <div class="card">
                   <div class="card-header card-header-danger">
                       <h4 class="card-title">Edit Profile</h4>
@@ -68,13 +205,6 @@
                                 <mat-form-field class="example-full-width">
                                    <textarea matInput placeholder="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."></textarea>
                                  </mat-form-field>
-                                  <!-- <div class="form-group">
-
-                                      <div class="form-group">
-                                          <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-                                          <textarea class="form-control" rows="5"></textarea>
-                                      </div>
-                                  </div> -->
                               </div>
                           </div>
                           <button mat-raised-button type="submit" class="btn btn-danger pull-right">Update Profile</button>
@@ -82,8 +212,8 @@
                       </form>
                   </div>
               </div>
-          </div>
-          <div class="col-md-4">
+          </div>-->
+          <!--<div class="col-md-4">
               <div class="card card-profile">
                   <div class="card-avatar">
                       <a href="#pablo">
@@ -99,7 +229,8 @@
                       <a href="#pablo" class="btn btn-danger btn-round">Follow</a>
                   </div>
               </div>
-          </div>
+          </div>-->
       </div>
   </div>
 </div>
+

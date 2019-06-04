@@ -4,6 +4,7 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { RestauracionComponent } from './restauracion/restauracion.component';
 
 const routes: Routes =[
   {
@@ -27,6 +28,7 @@ const routes: Routes =[
     // { path: 'notifications',  component: NotificationsComponent },
     // { path: 'upgrade',        component: UpgradeComponent },
     // { path: '',               redirectTo: 'dashboard', pathMatch: 'full' }
+    // {path:'restauracion', component:RestauracionComponent}
 ];
 
 @NgModule({

@@ -1,126 +1,251 @@
-<div class="main-content">
-  <div class="container-fluid">
-      <div class="card">
-          <div class="card-header card-header-danger">
-              <h3 class="card-title">Notifications</h3>
-              <p class="card-category">Handcrafted by our friend
-                  <a target="_blank" href="https://github.com/mouse0270">Robert McIntosh</a>. Please checkout the
-                  <a href="http://bootstrap-notify.remabledesigns.com/" target="_blank">full documentation.</a>
-              </p>
-          </div>
-          <div class="card-body">
-              <div class="row">
-                  <div class="col-md-6">
-                      <h4 class="card-title">Notifications Style</h4>
-                      <div class="alert alert-info">
-                          <span>This is a plain notification</span>
-                      </div>
-                      <div class="alert alert-info">
-                          <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <i class="material-icons">close</i>
-                          </button>
-                          <span>This is a notification with close button.</span>
-                      </div>
-                      <div class="alert alert-info alert-with-icon" data-notify="container">
-                          <i class="material-icons" data-notify="icon">add_alert</i>
-                          <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <i class="material-icons">close</i>
-                          </button>
-                          <span data-notify="message">This is a notification with close button and icon.</span>
-                      </div>
-                      <div class="alert alert-info alert-with-icon" data-notify="container">
-                          <i class="material-icons" data-notify="icon">add_alert</i>
-                          <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <i class="material-icons">close</i>
-                          </button>
-                          <span data-notify="message">This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <h4 class="card-title">Notification states</h4>
-                      <div class="alert alert-info">
-                          <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <i class="material-icons">close</i>
-                          </button>
-                          <span>
-                              <b> Info - </b> This is a regular notification made with ".alert-info"</span>
-                      </div>
-                      <div class="alert alert-success">
-                          <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <i class="material-icons">close</i>
-                          </button>
-                          <span>
-                              <b> Success - </b> This is a regular notification made with ".alert-success"</span>
-                      </div>
-                      <div class="alert alert-warning">
-                          <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <i class="material-icons">close</i>
-                          </button>
-                          <span>
-                              <b> Warning - </b> This is a regular notification made with ".alert-warning"</span>
-                      </div>
-                      <div class="alert alert-danger">
-                          <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <i class="material-icons">close</i>
-                          </button>
-                          <span>
-                              <b> Danger - </b> This is a regular notification made with ".alert-danger"</span>
-                      </div>
-                      <div class="alert alert-primary">
-                          <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <i class="material-icons">close</i>
-                          </button>
-                          <span>
-                              <b> Primary - </b> This is a regular notification made with ".alert-primary"</span>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-12">
-              <div class="places-buttons">
-                  <div class="row">
-                      <div class="col-md-6 ml-auto mr-auto text-center">
-                          <h4 class="card-title">
-                              Notifications Places
-                              <p class="category">Click to view notifications</p>
-                          </h4>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-lg-8 col-md-10 ml-auto mr-auto">
-                          <div class="row">
-                              <div class="col-md-4">
-                                  <button mat-raised-button class="btn btn-danger btn-block" (click)="showNotification('top','left')">Top Left</button>
-                              </div>
-                              <div class="col-md-4">
-                                  <button mat-raised-button class="btn btn-danger btn-block" (click)="showNotification('top','center')">Top Center</button>
-                              </div>
-                              <div class="col-md-4">
-                                  <button mat-raised-button class="btn btn-danger btn-block" (click)="showNotification('top','right')">Top Right</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-lg-8 col-md-10 ml-auto mr-auto">
-                          <div class="row">
-                              <div class="col-md-4">
-                                  <button mat-raised-button class="btn btn-danger btn-block" (click)="showNotification('bottom','left')">Bottom Left</button>
-                              </div>
-                              <div class="col-md-4">
-                                  <button mat-raised-button class="btn btn-danger btn-block" (click)="showNotification('bottom','center')">Bottom Center</button>
-                              </div>
-                              <div class="col-md-4">
-                                  <button mat-raised-button class="btn btn-danger btn-block" (click)="showNotification('bottom','right')">Bottom Right</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-<br>
-     
+<nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-wrapper">
+               <i class="material-icons">description</i> 
+          <a class="navbar-brand" href="#">Dietas</a>
         </div>
+    </div>
+    </nav>
+<div class="main-content">  
+  <div class="container-fluid">
+      <button class="btn btn-danger btn-round float-right" data-toggle="modal" data-target="#Modal">
+          <i class="material-icons">add_circle</i> Registra nueva dieta
+      </button>
+      <button class="btn btn-danger btn-round float-right" data-toggle="modal" data-target="#exampleModal">
+          <i class="material-icons">add_circle</i> Asignar Dieta
+      </button>
+        <br><br><br>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <p class="modal-title" id="exampleModalLabel">Asignar diestas a corrales</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+       </button>
+       </div>
+  <div class="modal-body">
+     <div class="row">
+          <p> Asigna la Dieta que deseas asignar a tus corrales pueden ser a mas de uno </p>
+        <div class="mx-5 mr-5">
+         <div class="info info-horizontal">
+            <div class="card-icon mr-5 my-4"><br><br>
+               <img src="../../assets/img/icons8_Wheat_64px_1.png" width="200%" height="200%">
+            </div>
+          </div>
+        </div>
+  <div class="col-md-6 mr-auto">
+     <form class="form" method="" action="">
+        <div class="card-body">
+          <div class="row">
+            <div class="mt-2">
+               <p>Dieta a asignar:</p>
+            </div>
+          <div class="col">
+            <select class="custom-select mr-sm-2 mb-1" id="inlineFormCustomSelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+          </div>
+          </div>
+    <div class="row">
+       <p>Detalles:</p>
+         <label>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, libero dolore cumque est alias porro,deserunt perferendis minima nobis laborum incidunt</label>
+    </div>
+    <div class=" form-row" >                        
+       <p> Corrales:</p>
+    <div class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="" checked>
+            <span class="form-check-sign">
+              <span class="check"></span>
+            </span>Corral 1 (Corderos)
+        </label>
+   </div>
+   <div class="form-check">
+     <label class="form-check-label">
+       <input class="form-check-input" type="checkbox" value="" checked>
+          <span class="form-check-sign">
+            <span class="check"></span>
+         </span> Corral 2 (Vientres)
+      </label>
+   </div>
+   <div class="form-check">
+     <label class="form-check-label">
+       <input class="form-check-input" type="checkbox" value="" checked>
+         <span class="form-check-sign">
+            <span class="check"></span>
+          </span> Corral 3 (Vientres)
+      </label>
+   </div>
+   <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" value="" checked>
+          <span class="form-check-sign">
+            <span class="check"></span>
+          </span> Corral 4 (Sementales)
+      </label>
+   </div>
+  <div class="form-check">
+    <label class="form-check-label">
+     <input class="form-check-input" type="checkbox" value="" checked>
+        <span class="form-check-sign">
+          <span class="check"></span>
+          </span>Corral 5 (Destete)
+    </label>
+  </div>
+  <div class="form-check">
+     <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" value="" checked>
+          <span class="form-check-sign">
+            <span class="check"></span>
+         </span>Corral 6 (Destete)
+     </label>
+   </div>
+  <div class="form-check">
+     <label class="form-check-label">
+       <input class="form-check-input" type="checkbox" value="" checked>
+          <span class="form-check-sign">
+            <span class="check"></span>
+           </span> Corral 7 (Veta)
+     </label>
+  </div>
+  </div>
+         </div>
+    <button class="btn btn-danger btn-round float-right " data-toggle="modal" data-target="#exampleModal">
+      <i class="material-icons">save</i> Asignar
+    </button>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+ </div>
+ <!-- Modal Registrar -->
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="modal-title" id="exampleModalLabel">Asignar diestas a corrales</p>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+<div class="modal-body">
+  <div class="row">
+    <div class="text-justify">
+     <p>Al registar la dieta dedes colocar el ingrediente y la cantidad necesaria por animal</p>
+    </div>
+  <div class="mx-5 mr-1">
+   <div class="info info-horizontal">
+     <div class="card-icon mr-3 my-5"><br><br>
+       <img src="../../assets/img/icons8_Wheat_64px_1.png" width="200%" height="250%">
       </div>
+    </div>
+  </div>
+<div class="col-md-6 mr-auto">
+  <form class="form" method="" action="">
+    <div class="card-body">
+      <div class="form-group">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Nombre">
+       </div>
+      </div>
+
+<div class="form-group">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Ingredientes">
+  </div>
+</div>
+<div class=" form-row" >
+  <div class=" form-group col-md-6 my-1 mr-2">
+   <input type="text" class="form-control" placeholder="Cantidad">    
+   </div>
+  <div class="form-group">
+     <select class="custom-select width=10% height=10%" id="inlineFormCustomSelect">
+        <option value="1">Kg</option>
+        <option value="2">*</option>
+        <option value="3">*</option>
+     </select>
+  </div>
+ <div class="form-row ml-1 ">
+   <button type="button" class=" btn btn-danger  close">
+      <i class="material-icons  ">add_box</i>
+     </button>
+                                                                        
+ </div>
+</div>
+<div class="row">
+    <div class="col-lg-15 col-md-15">
+        <div class="card-body table-responsive">
+            <table class="table table-hover">
+                <thead class="text-warning">
+                    <th>Ingrediente</th>
+                    <th>Cantidad</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Trigo</td>
+                        <td>40</td>
+                    </tr>
+                 </tbody>
+
+               </table>
+        </div>
+
+      </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group mt-3">
+              <h5>Cantidad de veces<br>al dia:</h5>
+           </div>
+         <div class="form-group ">
+           <select class="custom-select width=1% height=1% " id="inlineFormCustomSelect">
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+           </select>
+         </div>
+        </div>  
+        <p>Observaciones:</p>
+          <textarea name="comentarios" rows="4" cols="32"></textarea>
+ 
+</div>
+<button class="btn btn-danger btn-round float-right " data-toggle="modal" data-target="#exampleModal">
+  <i class="material-icons">save</i> Guardar
+</button>
+</form>
+ </div>
+</div>
+ </div>
+ </div>
+</div>
+ </div>
+<!--<a class="nav-link text-right font-weight-bold btn-link" ><u>Nuevo Ganadero</u></a>-->
+ <div class="row">
+  <div class="card mb-3 sm-6" style="max-width: 348px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="../../assets/img/icons8_Wheat_64px_1.png" class="card-img" alt="...">
+     </div>
+  <div class="col-md-8">
+    <div class="card-body">
+      <button type="button" class="ml-auto close">
+        <i class="material-icons ">delete</i>
+      </button>
+      <button type="button" class="ml-auto close">
+        <i class="material-icons ">edit</i>
+       </button><br>
+          <h5 class="card-title">Purina</h5>
+               <p class="card-text">Destete</p>
+    </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 

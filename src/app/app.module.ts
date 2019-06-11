@@ -15,7 +15,6 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { TableListComponent } from './table-list/table-list.component';
 import { TypographyComponent } from './typography/typography.component';
 import { IconsComponent } from './icons/icons.component';
-import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import {
@@ -27,7 +26,7 @@ import { RestauracionComponent } from './restauracion/restauracion.component';
 
 @NgModule({
   imports: [
-    BrowserAnimationsModule,
+  BrowserAnimationsModule,
     FormsModule,
     HttpModule,
     ComponentsModule,
@@ -41,7 +40,7 @@ import { RestauracionComponent } from './restauracion/restauracion.component';
     AppComponent,
     AdminLayoutComponent,
     LoginComponent,
-    RestauracionComponent,
+    RestauracionComponent
 
   ],
   providers: [],

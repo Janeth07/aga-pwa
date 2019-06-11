@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GanaderoLayoutComponent } from './ganadero-layout.component';
+import { DashboardGanaderoComponent } from './dashboard-ganadero.component';
 
-describe('GanaderoLayoutComponent', () => {
-  let component: GanaderoLayoutComponent;
-  let fixture: ComponentFixture<GanaderoLayoutComponent>;
+describe('DashboardGanaderoComponent', () => {
+  let component: DashboardGanaderoComponent;
+  let fixture: ComponentFixture<DashboardGanaderoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GanaderoLayoutComponent ]
+      declarations: [ DashboardGanaderoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GanaderoLayoutComponent);
+    fixture = TestBed.createComponent(DashboardGanaderoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

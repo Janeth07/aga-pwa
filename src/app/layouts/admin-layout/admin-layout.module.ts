@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminLayoutRoutes } from './admin-layout.routing';
+
 import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
 import { TableListComponent } from '../../table-list/table-list.component';
@@ -11,6 +12,12 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { DashboardGanaderoComponent } from 'app/dashboard-ganadero/dashboard-ganadero.component';
+import { AnalisisComponent } from './../../analisis/analisis.component';
+import { ReportesComponent } from './../../reportes/reportes.component';
+import { MarketComponent } from './../../market/market.component';
+import { AdministracionComponent } from './../../administracion/administracion.component';
+
 
 import {
   MatButtonModule,
@@ -41,6 +48,12 @@ import {
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
+    DashboardGanaderoComponent,
+    AnalisisComponent,
+    ReportesComponent,
+    MarketComponent,
+    AdministracionComponent
+
   ]
 })
 

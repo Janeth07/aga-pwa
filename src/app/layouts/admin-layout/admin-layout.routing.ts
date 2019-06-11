@@ -5,9 +5,14 @@ import { UserProfileComponent } from '../../user-profile/user-profile.component'
 import { TableListComponent } from '../../table-list/table-list.component';
 import { TypographyComponent } from '../../typography/typography.component';
 import { IconsComponent } from '../../icons/icons.component';
-import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { DashboardGanaderoComponent } from 'app/dashboard-ganadero/dashboard-ganadero.component';
+import { AnalisisComponent } from './../../analisis/analisis.component';
+import { ReportesComponent } from './../../reportes/reportes.component';
+import { MarketComponent } from './../../market/market.component';
+import { AdministracionComponent } from './../../administracion/administracion.component';
+import { MapsComponent } from 'app/maps/maps.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -53,11 +58,14 @@ export const AdminLayoutRoutes: Routes = [
     //     }]
     // }
     { path: 'dashboard',      component: DashboardComponent },
-    { path: 'user-profile',   component: UserProfileComponent },
-    { path: 'table-list',     component: TableListComponent },
-    { path: 'typography',     component: TypographyComponent },
-    { path: 'icons',          component: IconsComponent },
-    { path: 'maps',           component: MapsComponent },
-    { path: 'notifications',  component: NotificationsComponent },
-    { path: 'upgrade',        component: UpgradeComponent },
+    { path: 'dashboard_ganadero',      component: DashboardGanaderoComponent },
+    { path: 'ganaderos',   component: UserProfileComponent },
+    { path: 'ganado',   component: MapsComponent },
+    { path: 'analisis',     component: AnalisisComponent },
+    { path: 'registrar',     component:  TableListComponent},
+    { path: 'reportes',     component: ReportesComponent },
+    { path: 'market',          component: MarketComponent },
+    { path: 'administracion',           component: AdministracionComponent },//crear
+    { path: 'dietas',  component: NotificationsComponent },
+    { path: 'corrales',        component: UpgradeComponent },
 ];

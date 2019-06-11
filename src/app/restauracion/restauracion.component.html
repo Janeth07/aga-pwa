@@ -8,30 +8,48 @@
           </div>
           <h3>¿Olvidaste tu usuario?</h3>
           <p>¿Tu puedes Recuperar tu nombre de usuario aquí?</p>
-          <div class="from-gropu text-center">
+          <div class="form-group">
+            <label class="float-left" for="exampleInputEmail1">Correo</label>
             <input
               type="email"
-              class="from-control btn-block"
-              id="exampleInputEmaill"
-              placeholder="Correo Electrónico"
-            /><br />
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              placeholder="Teclea tu correo"
+            />
           </div>
           <button
             type="button"
             class="btn btn-danger btn-md btn-block"
             data-toggle="modal"
-            data-target="#exampleModal"
-          >
+            data-target="#exampleModal">
             Restaurar
           </button>
           <a routerLink=""
             class="btn btn-danger btn-md btn-block"
             >Cancelar</a>
           <div class="text-right">
-            <a href=""><u>¿Se te olvido tu contraseña?</u></a>
+            <a href=""><u class="text-danger">¿Se te olvido tu contraseña?</u></a>
             <br/>
           </div>
         </form>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Alerta</h5>
+              </div>
+              <div class="modal-body text-justify">
+            Se ha enviado un enlace a su correo electronico para recuperar
+            su contraseña. Consulte su correo y sigua las instrucciones para recuperar su cuenta.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger">Aceptar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

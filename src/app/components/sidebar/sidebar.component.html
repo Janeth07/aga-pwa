@@ -4,9 +4,9 @@
        <!-- <div class="logo-img">
             <img src="/assets/img/angular2-logo-red.png"/>
         </div>--> 
-       <h1 class="font-weight-bold">AGA</h1>
+       <h1 class="font-weight-bold"><img src="./../../../assets/img/logo.jpg" width="30%" alt=""></h1>
 
-        AGA
+        
 
     </a>
 </div>
@@ -58,12 +58,22 @@
         </li>
     </ul>
   </div>
-    <ul class="nav">
-        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+    <ul class="nav" *ngIf="isAdmon">
+        <!-- Menú de administrador-->
+        <li  routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
             <a class="nav-link" [routerLink]="[menuItem.path]">
                 <i class="material-icons">{{menuItem.icon}}</i>
                 <p>{{menuItem.title}}</p>
             </a>
         </li>
     </ul>
+    <ul class="nav" *ngIf="isGan">
+            <!-- Menú de ganadero-->
+            <li  routerLinkActive="active" *ngFor="let menuItem of menuItemsGanadero" class="{{menuItem.class}} nav-item">
+                    <a class="nav-link" [routerLink]="[menuItem.path]">
+                        <i class="material-icons">{{menuItem.icon}}</i>
+                        <p>{{menuItem.title}}</p>
+                    </a>
+                </li>
+        </ul>
 </div>

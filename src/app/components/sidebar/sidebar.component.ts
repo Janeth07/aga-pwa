@@ -10,13 +10,22 @@ declare interface RouteInfo {
 export const ROUTES: RouteInfo[] = [
 
     { path: '/dashboard', title: 'Panel',  icon: 'pie_chart', class: '' },
-    { path: '/user-profile', title: 'Ganadero',  icon:'person', class: '' },
-    { path: '/table-list', title: 'Analisis',  icon:'insert_chart_outlined', class: '' },
-    { path: '/typography', title: 'Reportes',  icon:'assignment', class: '' },
-    { path: '/icons', title: 'Market',  icon:'shopping_cart', class: '' },
-    { path: '/maps', title: 'Administracion',  icon:'event', class: '' },
-    { path: '/notifications', title: 'Dietas',  icon:'description', class: '' },
-    { path: '/upgrade', title: 'Corrales',  icon:'view_module', class: '' }
+    { path: '/ganaderos', title: 'Ganadero',  icon:'person', class: '' },
+    { path: '/analisis', title: 'Analisis',  icon:'insert_chart_outlined', class: '' },
+    { path: '/reportes', title: 'Reportes',  icon:'assignment', class: '' },
+    { path: '/market', title: 'Market',  icon:'shopping_cart', class: '' },
+    { path: '/administracion', title: 'Administracion',  icon:'event', class: '' }
+];
+export const ROUTES_GAN: RouteInfo[] = [
+
+    { path: '/dashboard_ganadero', title: 'Panel',  icon: 'pie_chart', class: '' },
+    { path: '/ganado', title: 'Ganado',  icon: 'pie_chart', class: '' },    
+    { path: '/dietas', title: 'Dietas',  icon:'description', class: '' },
+    { path: '/corrales', title: 'Corrales',  icon:'view_module', class: '' },
+    { path: '/registrar', title: 'Registrar',  icon:'view_module', class: '' },    
+    { path: '/reportes', title: 'Reportes',  icon:'assignment', class: '' },
+    { path: '/market', title: 'Market',  icon:'shopping_cart', class: '' },
+    { path: '/administracion', title: 'Administracion',  icon:'event', class: '' }
 ];
 
 @Component({
@@ -26,11 +35,15 @@ export const ROUTES: RouteInfo[] = [
 })
 export class SidebarComponent implements OnInit {
   menuItems: any[];
-
+  menuItemsGanadero: any[];
+  isAdmon:boolean = false;
+  isGan:boolean = true;
   constructor() { }
 
   ngOnInit() {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
+    this.menuItemsGanadero = ROUTES_GAN.filter(menuItem => menuItem);
+
   }
   isMobileMenu() {
       if ($(window).width() > 991) {

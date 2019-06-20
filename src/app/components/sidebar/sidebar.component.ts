@@ -22,7 +22,7 @@ export const ROUTES_GAN: RouteInfo[] = [
     { path: '/ganado', title: 'Ganado',  icon: 'pie_chart', class: '' },    
     { path: '/dietas', title: 'Dietas',  icon:'description', class: '' },
     { path: '/corrales', title: 'Corrales',  icon:'view_module', class: '' },
-    { path: '/registrar', title: 'Registrar',  icon:'view_module', class: '' },    
+    { path: '/registrar', title: 'Registrar',  icon:'list_alt', class: '' },    
     { path: '/reportes', title: 'Reportes',  icon:'assignment', class: '' },
     { path: '/market', title: 'Market',  icon:'shopping_cart', class: '' },
     { path: '/administracion', title: 'Administracion',  icon:'event', class: '' }

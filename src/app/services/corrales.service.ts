@@ -1,0 +1,51 @@
+import { Injectable } from '@angular/core';
+import {AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument} from '@angular/fire/firestore'
+import {Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
+import {Corrales} from '../interfaces/corrales.interface';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CorralesService {
+
+  constructor(private afs:AngularFirestore) {
+   this.corralesCollection=afs.collection<Corrales>('corrales');
+    this.corrales=this.corralesCollection.valueChanges();
+   }
+
+ private corralesCollection: AngularFirestoreCollection<Corrales>;
+   private corrales:Observable<Corrales[]>;
+   public selectCorral:Corrales={
+     id:null
+   };
+   private corralDoc:AngularFirestoreDocument<Corrales>;
+   private corral:Observable<Corrales>;
+
+   getCorrales(){
+     return this.corrales=this.corralesCollection.snapshotChanges()
+     .pipe(map(changes => {
+       return changes.map(action=>{
+         const data=action.payload.doc.data() as Corrales;
+         data.id=action.payload.doc.id;
+         return data;
+       });
+     }));
+   }
+
+   updateCorrales(corral:Corrales): void{
+     let id=corral.id;
+     this.corralDoc=this.afs.doc<Corrales>(`corrales/${id}`);
+    this.corralDoc.update(corral);
+   }
+
+   deleteCorral(id:string): void{
+     this.corralDoc=this.afs.doc<Corrales>(`corrales/${id}`);
+     this.corralDoc.delete();
+
+   }
+
+   addCorral(corral:any){
+return this.corralesCollection.add(corral);
+   }
+}

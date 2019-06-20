@@ -3,6 +3,7 @@ import {AngularFireAuth} from '@angular/fire/auth';
 import {AuthService} from './auth.service';
 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +12,7 @@ import {AuthService} from './auth.service';
 export class AppComponent implements OnInit {
 
   user: firebase.User;
-  constructor(private afAuth: AngularFireAuth, private authService: AuthService ){
+  constructor(private afAuth: AngularFireAuth, private authService: AuthService){
   }
 
   ngOnInit() {

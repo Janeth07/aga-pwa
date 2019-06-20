@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 declare var $: any;
+import {DietasService} from '../services/dietas.service';
+import {Dietas} from '../interfaces/dietas.interface';
+import {NgForm} from '@angular/forms';
+
 @Component({
   selector: 'app-notifications',
   templateUrl: './notifications.component.html',
@@ -7,7 +11,13 @@ declare var $: any;
 })
 export class NotificationsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dietasService: DietasService) { }
+  @ViewChild ('btnClose') btnClose : ElementRef;
+  public dietas=[];
+  public dieta='';
+  
+
+
   showNotification(from, align){
       const type = ['','info','success','warning','danger'];
 
@@ -36,7 +46,37 @@ export class NotificationsComponent implements OnInit {
           '</div>'
       });
   }
+
+
+
   ngOnInit() {
-  }
+    this.dietasService.getDietas().subscribe(dietas => {
+      console.log('DIETAS', dietas);
+      this.dietas=dietas;
+     })
+   }
+ 
+   saveDietas(dietaForm:NgForm): void{
+     if(dietaForm.value.id==null){
+       this.dietasService.addDieta(dietaForm.value);
+     }
+     else{
+       this.dietasService.updateDietas(dietaForm.value);
+     }
+     dietaForm.resetForm();
+     alert('Dieta registrada con exito');
+   }
+ 
+   onDeleteDieta(id:string){
+     console.log('DELETE DIETA', id);
+     const confirmacion= confirm ('¿Deseas eliminar el registro?');
+     if(confirmacion){
+       this.dietasService.deleteDieta(id);
+     }
+   }
+ 
+   onPreUpdateDieta(dieta:Dietas){
+     this.dietasService.selectDieta=Object.assign({},dieta);
+   }
 
 }

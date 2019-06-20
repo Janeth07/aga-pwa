@@ -36,23 +36,22 @@
           </div>
         </div>
   <div class="col-md-6 mr-auto">
-     <form class="form" method="" action="">
+     <form class="form" method="" action="" >
         <div class="card-body">
           <div class="row">
             <div class="mt-2">
                <p>Dieta a asignar:</p>
             </div>
           <div class="col">
-            <select class="custom-select mr-sm-2 mb-1" id="inlineFormCustomSelect">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+            <select class="custom-select mr-md-5 mb-1" id="inlineFormCustomSelect"  >
+                <option *ngFor="let dieta of dietas">{{dieta.nombre}}</option>
+               
             </select>
           </div>
           </div>
     <div class="row">
-       <p>Detalles:</p>
-         <label>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, libero dolore cumque est alias porro,deserunt perferendis minima nobis laborum incidunt</label>
+       <p>Detalles:</p><br>
+         <label></label>
     </div>
     <div class=" form-row" >                        
        <p> Corrales:</p>
@@ -147,11 +146,12 @@
     </div>
   </div>
 <div class="col-md-6 mr-auto">
-  <form class="form" method="" action="">
+  <form class="form" method="" action=""  #formDieta="ngForm" (ngSubmit)="saveDietas(formDieta)">
     <div class="card-body">
       <div class="form-group">
+          <div type="text" name="id" [(ngModel)]="this.dietasService.selectDieta.id"></div>
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Nombre">
+          <input type="text" class="form-control" placeholder="Nombre" name="nombre" [(ngModel)]="this.dietasService.selectDieta.nombre">
        </div>
       </div>
 
@@ -166,9 +166,9 @@
    </div>
   <div class="form-group">
      <select class="custom-select width=10% height=10%" id="inlineFormCustomSelect">
-        <option value="1">Kg</option>
-        <option value="2">*</option>
-        <option value="3">*</option>
+        <option value="kg">Kg</option>
+        <option value="gr">gr</option>
+        <option value="*">*</option>
      </select>
   </div>
  <div class="form-row ml-1 ">
@@ -188,8 +188,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Trigo</td>
-                        <td>40</td>
+                        <td></td>
+                        <td></td>
                     </tr>
                  </tbody>
 
@@ -203,18 +203,20 @@
               <h5>Cantidad de veces<br>al dia:</h5>
            </div>
          <div class="form-group ">
-           <select class="custom-select width=1% height=1% " id="inlineFormCustomSelect">
+           <select class="custom-select width=1% height=1% " id="inlineFormCustomSelect" name="raciones_por_dia" [(ngModel)]="this.dietasService.selectDieta.raciones_por_dia">
                <option value="1">1</option>
                <option value="2">2</option>
                <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
            </select>
          </div>
         </div>  
         <p>Observaciones:</p>
-          <textarea name="comentarios" rows="4" cols="32"></textarea>
+          <textarea name="comentarios" rows="4" cols="32"  name="descripcion" [(ngModel)]="this.dietasService.selectDieta.descripcion"></textarea>
  
 </div>
-<button class="btn btn-danger btn-round float-right " data-toggle="modal" data-target="Modal">
+<button class="btn btn-danger btn-round float-right " data-toggle="modal" data-target="Modal" type="submit">
   <i class="material-icons">save</i> Guardar
 </button>
 </form>
@@ -226,7 +228,7 @@
  </div>
 <!--<a class="nav-link text-right font-weight-bold btn-link" ><u>Nuevo Ganadero</u></a>-->
  <div class="row">
-  <div class="card mb-3 sm-6" style="max-width: 348px;">
+  <div class="card mb-3 sm-6 mr-5" style="max-width: 348px;" *ngFor="let dieta of dietas">
     <div class="row no-gutters">
       <div class="col-md-4">
         <img src="../../assets/img/icons8_Wheat_64px_1.png" class="card-img" alt="...">
@@ -239,8 +241,8 @@
       <button type="button" class="ml-auto close">
         <i class="material-icons ">edit</i>
        </button><br>
-          <h5 class="card-title">Purina</h5>
-               <p class="card-text">Destete</p>
+          <h5 class="card-title">{{dieta.nombre}}</h5>
+               <p class="card-text">{{dieta.descripcion}}</p>
     </div>
  </div>
 </div>

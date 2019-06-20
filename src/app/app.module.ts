@@ -7,11 +7,12 @@ import { RouterModule } from '@angular/router';
 import { AngularFireModule } from '@angular/fire';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import {AngularFirestore} from '@angular/fire/firestore';
 
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
-
+import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -32,6 +33,7 @@ import { RestauracionComponent } from './restauracion/restauracion.component';
   BrowserAnimationsModule,
     FormsModule,
     HttpModule,
+    HttpClientModule,
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
@@ -49,7 +51,7 @@ import { RestauracionComponent } from './restauracion/restauracion.component';
     RestauracionComponent
 
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

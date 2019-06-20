@@ -43,8 +43,8 @@ onlogininGoogle() : void {
   }).catch(err=> console.log('err',err));
 }
 Onlogin():void{
-  //console.log('email', this.email);
-  //console.log('password', this.password);
+  console.log('email', this.email);
+  console.log('password', this.password);
 this.authService.loginEmailUser(this.email,this.password).then((res)=>{
  this.router.navigate(['dashboard']);
 }).catch(err=> console.log('err',err.message));

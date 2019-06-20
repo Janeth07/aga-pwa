@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { auth } from 'firebase';
+import { auth} from 'firebase';
+import {User} from './models/user'
 import { resolve } from 'url';
 import { reject } from 'q';
+import {AngularFirestore,AngularFirestoreDocument} from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor(private afAuth: AngularFireAuth, private afsAuth: AngularFireAuth) {}
+  constructor(private afAuth: AngularFireAuth,private afs:AngularFirestore) {}
 
   login(){
     console.log('Redireccionando..');
@@ -35,15 +37,26 @@ export class AuthService {
 
   loginEmailUser(email:string, password: string){
   return new Promise((resolve , reject ) =>{
-    this.afsAuth.auth.signInWithEmailAndPassword(email,password).then(userData => resolve(userData),
+    this.afAuth.auth.signInWithEmailAndPassword(email,password).then(userData => resolve(userData),
     err => reject(err));
   });
   }
   logoutUser(){
-    return this.afsAuth.auth.signOut();
+    return this.afAuth.auth.signOut();
   }
 
   loginGoogleUser(){
- return this.afsAuth.auth.signInWithPopup(new auth.GoogleAuthProvider());
+ return this.afAuth.auth.signInWithPopup(new auth.GoogleAuthProvider());
   }
+  /*
+  private updateUserData(user){
+    const userRef = AngularFirestoreDocument<any> = this.afs.doc('users/'+user.id);
+    const data : User  ={
+      id : user.id,
+      email: user.email,
+      roles: {
+        editor :true
+      }
+    }
+  }*/
 }

@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import {CorralesService} from '../services/corrales.service';
 import {Corrales} from '../interfaces/corrales.interface';
 import {NgForm} from '@angular/forms';
+import { CategoriaAnimal } from './../interfaces/corrales.interface';
 
 @Component({
   selector: 'app-upgrade',
@@ -10,6 +11,7 @@ import {NgForm} from '@angular/forms';
 })
 export class UpgradeComponent implements OnInit {
 
+  checks:CategoriaAnimal={destete:false,vientre:false,semental:false,coordero:false};
   constructor(public corralesService: CorralesService) { }
 @ViewChild ('btnClose') btnClose : ElementRef;
 public corrales=[];
@@ -21,15 +23,22 @@ public corral='';
      this.corrales=corrales;
     })
   }
+  resetChecks(corralForm:NgForm){
 
+    this.checks = {destete:false,vientre:false,semental:false,coordero:false};
+    corralForm.reset();
+  }
   saveCorral(corralForm:NgForm): void{
     if(corralForm.value.id==null){
-      this.corralesService.addCorral(corralForm.value);
+      this.corralesService.addCorral(corralForm.value,this.checks);
+      this.checks = {destete:false,vientre:false,semental:false,coordero:false};
+      
     }
     else{
-      this.corralesService.updateCorrales(corralForm.value);
+      this.corralesService.updateCorrales(corralForm.value,this.checks);      
+      this.checks = {destete:false,vientre:false,semental:false,coordero:false};
     }
-    corralForm.resetForm();
+    corralForm.reset();
     alert('Corral registrado con exito');
   }
 
@@ -42,6 +51,7 @@ public corral='';
   }
 
   onPreUpdateCorral(corral:Corrales){
+    this.checks = corral.aloja;
     this.corralesService.selectCorral=Object.assign({},corral);
   }
   

@@ -1,0 +1,543 @@
+[33mcommit f77fc7e8b17af9e810ac9b39093171c9fa16def0[m
+Merge: a87afa3 c0b20b1
+Author: olara1989 <olara@utzac.edu.mx>
+Date:   Tue Jun 11 13:56:54 2019 -0500
+
+    Merge pull request #3 from Janeth07/master
+    
+    Cambie los colores de las vistas para que todos estuvieran en color rojo
+
+[33mcommit c0b20b1d12155fd89e61b5590661726b4d3d56f2[m
+Merge: 058a629 a87afa3
+Author: olara1989 <olara@utzac.edu.mx>
+Date:   Tue Jun 11 13:55:28 2019 -0500
+
+    Merge branch 'master' into master
+
+[33mcommit 058a629afbdba96f3db50650bfa90a081e023912[m
+Author: Janeth <481700632@alumnos.utzac.edu.mx>
+Date:   Tue Jun 11 12:42:43 2019 -0500
+
+    Cambie los colores de las vistas para que todos estuvieran en color rojo
+
+[33mcommit a87afa364496452f1c2ad0203d147547ac83049e[m
+Author: Omar <olara@utzac.edu.mx>
+Date:   Tue Jun 11 12:41:52 2019 -0500
+
+    Implementación de rutas y enlaces con distincion usuarios
+
+[33mcommit 8a5ed295e6ffc50e1cb6213f1b9ead3341cf709e[m
+Author: Omar <olara@utzac.edu.mx>
+Date:   Tue Jun 4 13:15:17 2019 -0500
+
+    Integramos el login y recuperarcontraseña, ademas de generar los enlaces pertinentes, y al final se agregó el layout del ganadero y administrador
+
+[33mcommit 270563990083368cb4e89c9cbe6642cc2cef77b8[m
+Merge: 63d0476 8585810
+Author: olara1989 <olara@utzac.edu.mx>
+Date:   Tue Jun 4 09:59:13 2019 -0500
+
+    Merge pull request #2 from Janeth07/master
+    
+    Creacion de las vitas de Ganadero, Analisis y Administracion
+
+[33mcommit 858581040613e650d0d35453d085603e99185a8a[m
+Merge: 644aef7 63d0476
+Author: olara1989 <olara@utzac.edu.mx>
+Date:   Tue Jun 4 09:57:47 2019 -0500
+
+    Merge branch 'master' into master
+
+[33mcommit 63d04764f8bafba788121a02f5508559efb7de51[m
+Merge: 13e6b26 ef057e9
+Author: olara1989 <olara@utzac.edu.mx>
+Date:   Tue Jun 4 09:19:29 2019 -0500
+
+    Merge pull request #1 from lizeht/master
+    
+    Creación de vista del panel, corral  y dietas
+
+[33mcommit 644aef75535dc6ff507a5b9b7a5d70261137b902[m
+Author: Janeth <481700632@alumnos.utzac.edu.mx>
+Date:   Mon Jun 3 11:43:45 2019 -0500
+
+    Creacion de las vitas de Ganadero, Analisis y Administracion
+
+[33mcommit ef057e9c8477085777efe6c4afdb4e9305f1f040[m
+Author: Adriana <481700651@alumnos.utzac.edu.mx>
+Date:   Mon Jun 3 11:37:59 2019 -0500
+
+    Creacion de vista del panel, corral Y dietas
+
+[33mcommit 13e6b26db471c5cbea6b9a5dd8f5c92eab827888[m
+Author: chelaruc <chelaruciprian10@gmail.com>
+Date:   Wed Nov 14 15:27:32 2018 +0200
+
+    added v2.2.0 (update to angular 7)
+
+[33mcommit 49842174971738c60bffe90329beee8babb2809b[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed May 23 15:01:11 2018 +0300
+
+    adede v6.0.3 of angular/cli
+
+[33mcommit a0a956b713bfa22b7054d22cf737d61e7ae35cd4[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed May 23 14:49:07 2018 +0300
+
+    changed images path
+
+[33mcommit 9467efca10787584310a5d9cb3dc1a0d171063d8[m
+Merge: a1e99a2 5a2d1cf
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed May 23 14:39:01 2018 +0300
+
+    Merge branch 'master' of https://github.com/creativetimofficial/material-dashboard-angular2
+    
+    * 'master' of https://github.com/creativetimofficial/material-dashboard-angular2:
+      Delete package-lock.json
+
+[33mcommit a1e99a248bba155e3b6564ee9606f30d1a00bd13[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed May 23 14:38:55 2018 +0300
+
+    small changes
+
+[33mcommit 5a2d1cf7ceb864fefa7b0d4f47d9beb21b6eaee6[m
+Author: Creative Tim <tim.creativecode@gmail.com>
+Date:   Wed May 23 14:38:14 2018 +0300
+
+    Delete package-lock.json
+
+[33mcommit c94a28cd08989b059c1a20bf0636c997064e0251[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed May 23 14:37:33 2018 +0300
+
+    sall changes
+
+[33mcommit 34b2faaf76cfbbdecaec61ec3903eb2f19001d8f[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed May 23 14:32:26 2018 +0300
+
+    changes in gitignore
+
+[33mcommit 12ee519e94e7941522c5b6fe3c51f31e3fdbb2b9[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed May 23 14:22:40 2018 +0300
+
+    changed some links
+
+[33mcommit 342f780726548b1f647ec9cf1e945d7954bed637[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed May 23 14:19:51 2018 +0300
+
+    changed version
+
+[33mcommit 300f23b9cd01046bed0fc9f77c1509351860ff93[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Apr 27 15:07:42 2018 +0300
+
+    added v2.1.0
+
+[33mcommit d822618df426d04366b4e149a27e475014fd2570[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed Apr 25 15:21:30 2018 +0300
+
+    changed file structure
+
+[33mcommit ddc5a60e362114ad42ae2ee79ce5971fae4da736[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Apr 20 17:27:37 2018 +0300
+
+    changed version
+
+[33mcommit 89324dde1751228bd9ff550bbe26a40856a5fd24[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Apr 20 17:21:32 2018 +0300
+
+    some fixes
+
+[33mcommit dc150ab7118e7fb0ef4e7aa52f072d0d45b410b1[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Apr 20 16:02:50 2018 +0300
+
+    small changes
+
+[33mcommit 64acfe79f7c69d1617277dab4b1e955f1492f09b[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Apr 20 15:57:54 2018 +0300
+
+    small changes on documentation
+
+[33mcommit c9cd6d7c45ee2f78bf0e0f265872e97885bb5bc9[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Apr 20 15:42:13 2018 +0300
+
+    small changes
+
+[33mcommit 4a55ac6690196a4bab9cedbb4c83a424c1c1c590[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Apr 20 15:10:18 2018 +0300
+
+    added new structure
+
+[33mcommit 9ad633c77f449779a3f7cb78577eaaf7c00406c1[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed Apr 18 15:47:26 2018 +0300
+
+    added bootstrap 4 and angular 5
+
+[33mcommit 8ca8aa7a96ade385a5cd63d80ec23d4a347fa35b[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed Nov 1 13:29:14 2017 +0200
+
+    changes for doc
+
+[33mcommit a8baa0a5d0c2a510d9278b56a9be712ce582aa88[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed Nov 1 12:37:51 2017 +0200
+
+    added v1.4.2
+
+[33mcommit 7d9c303c9614441ca3530501d5dd000ace12dc65[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed Nov 1 12:12:03 2017 +0200
+
+    fixes for doc
+
+[33mcommit ced40ae968130b48d3f5f83091a5bba13b9a5192[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed Nov 1 12:09:44 2017 +0200
+
+    added changes for update
+    - fixed IE
+    - added PS
+    - added scrolltop
+    - changed angular-cli.json styles
+
+[33mcommit be30cd80cc7e008c6ecf81e1edea3f570bc90bdd[m
+Merge: b7909c7 e86337a
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Oct 30 14:59:57 2017 +0200
+
+    Merge branch 'master' of https://github.com/creativetimofficial/material-dashboard-angular
+    
+    * 'master' of https://github.com/creativetimofficial/material-dashboard-angular:
+      changelog
+
+[33mcommit e86337a9dee772838ff3b7411cdc9917cb3edb28[m
+Author: AlexP <axelut@me.com>
+Date:   Tue Sep 19 18:05:54 2017 +0300
+
+    changelog
+
+[33mcommit b7909c70926b0cdda8d7c14edb912e0da4eeed02[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Tue Sep 19 16:32:49 2017 +0300
+
+    changed package.json
+
+[33mcommit 0da8fe3f3ed3aadf3937170670baaf523cb27dd0[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Tue Sep 19 13:11:33 2017 +0300
+
+    Added version 1.4.1 and deleted js file
+
+[33mcommit d32079638c55f47ee0aa4643635eb00860fb7373[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Tue Sep 19 13:04:13 2017 +0300
+
+    Fixed material initialisation
+
+[33mcommit e8dc6b432ecb6b2518650242d5687592595ae576[m
+Author: Axelut <axelut@me.com>
+Date:   Wed Aug 23 15:56:02 2017 +0300
+
+    small change in documentation
+
+[33mcommit 297815b5eef867676d678c62e701e7c41c86e541[m
+Author: Axelut <axelut@me.com>
+Date:   Wed Aug 23 15:49:15 2017 +0300
+
+    small change in CHANGELOG
+
+[33mcommit 96af475675d44eacfedb9a463cda78e441883c42[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed Aug 23 15:42:09 2017 +0300
+
+    Added cli files
+
+[33mcommit 22b2e086a965558336a09ac97377272245b5d91b[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed Apr 5 11:17:59 2017 +0300
+
+    -Fixed issue #5
+    -FIxed issue #3 npm start
+    -Update package #9
+
+[33mcommit 60cf244356b50a860ca28459afbc49757e2f2767[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Tue Apr 4 14:43:30 2017 +0300
+
+    small changes
+
+[33mcommit 1dba41beed84e5571d4cc9b25334685f8e08fc30[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Apr 3 17:06:20 2017 +0300
+
+    Small changes
+
+[33mcommit 0bcb304bfd8d6c472b57eb8024759b48d547c984[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Apr 3 17:05:21 2017 +0300
+
+    added version 1.2.0 + small changes on moving tab
+
+[33mcommit 9059e0d35107fbc86727c7fd3f9b8d9a770c6896[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Apr 3 16:36:41 2017 +0300
+
+    Fixed burger menu
+
+[33mcommit 8f1fdb18bba39237a9f87ebc0f0956ea5941357b[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Apr 3 15:50:33 2017 +0300
+
+    added upgrade page + update package
+
+[33mcommit 5603583d4153762f68ca7384a35a95517c53f862[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Apr 3 13:12:31 2017 +0300
+
+    Cleaned sidebar files
+
+[33mcommit 9eb3f8d355f79539f1bd4a46f656ea4b50414506[m
+Merge: 29a54c9 97fd19c
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Apr 3 12:34:55 2017 +0300
+
+    Merge branch 'pullRequest'
+    
+    * pullRequest:
+      Changes the sidebar routes to be more dynamic, including the icon in the routes config
+
+[33mcommit 97fd19c35a059a12ebd4f8748f8b5746b0b63aae[m
+Merge: 29a54c9 d1a63a9
+Author: Chelaru Ciprian <chelaru_ciprian@yahoo.com>
+Date:   Mon Apr 3 12:30:08 2017 +0300
+
+    Merge pull request #6 from cagedit/master
+    
+    Changes the sidebar routes to be more dynamic
+
+[33mcommit d1a63a90e6e452785508298c091d705a9d03ac05[m
+Author: Jeffrey Lemay <i@cage.is>
+Date:   Fri Mar 24 00:03:54 2017 -0400
+
+    Changes the sidebar routes to be more dynamic, including the icon in the routes config
+
+[33mcommit 29a54c9925a9dcf8a0989d7ccfc6c1a55ca301f7[m
+Merge: 5900af9 851c541
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Tue Mar 21 17:13:07 2017 +0200
+
+    Merge branch 'master' of https://github.com/creativetimofficial/material-dashboard-angular
+    
+    * 'master' of https://github.com/creativetimofficial/material-dashboard-angular:
+      small changes in text
+
+[33mcommit 5900af9a2ef84ed141cabf93dfcaab1c2471b1ef[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Tue Mar 21 17:12:24 2017 +0200
+
+    deleted footer on maps page
+
+[33mcommit 851c5416aa1d70242a6962a95e788e7b7471d2b9[m
+Author: Axelut <axelut@me.com>
+Date:   Tue Mar 21 17:04:53 2017 +0200
+
+    small changes in text
+
+[33mcommit 5a571a5aef3ad04e184d0fd1f24ec25019fd5dce[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Tue Mar 21 16:56:02 2017 +0200
+
+    Added version
+
+[33mcommit 132fcaf3d82a2c81463961e81b05aeac49b8962b[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Tue Mar 21 11:42:33 2017 +0200
+
+    Changed update date
+
+[33mcommit 64abe28cc66e2d048d4042518a091c82def5f56e[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Mar 20 12:08:23 2017 +0200
+
+    added changelog in file structure
+
+[33mcommit 5be5a44086b6c53b95aca0f6441f3ecf6d9eeb05[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Mar 20 12:03:23 2017 +0200
+
+    fixed sidebar
+
+[33mcommit 7294c6197ecbfa9134d6bef62d42bf44fda80f8d[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Mar 20 11:31:00 2017 +0200
+
+    Added upgrade to pro page
+
+[33mcommit fd2727015cc6aa512752e4d27070f665c13c9d4d[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Feb 24 13:21:13 2017 +0200
+
+    Fixed refresh on dashboard
+
+[33mcommit 6181d42b0b07cea6416f506a50671132732542bd[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Jan 30 17:14:52 2017 +0200
+
+    small changes
+
+[33mcommit 8bff64a092be8b6bd48ebadb4dd8fd99b0afc363[m
+Merge: d717737 5b246f6
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Jan 30 16:26:15 2017 +0200
+
+    Merge branch 'master' of https://github.com/creativetimofficial/material-dashboard-angular
+    
+    * 'master' of https://github.com/creativetimofficial/material-dashboard-angular:
+      small adjustments
+      changes in readme
+      name changes and version
+
+[33mcommit 5b246f61543d988541b3d0e13edb0ca970252333[m
+Author: Axelut <axelut@me.com>
+Date:   Mon Jan 30 15:48:59 2017 +0200
+
+    small adjustments
+
+[33mcommit 771e86cc5d8aa9f5fba76d6094d72863e4d32ea5[m
+Author: Axelut <axelut@me.com>
+Date:   Mon Jan 30 15:42:31 2017 +0200
+
+    changes in readme
+
+[33mcommit 2ba7d3225eb5389f089da0f69f836d80850c7295[m
+Author: Axelut <axelut@me.com>
+Date:   Mon Jan 30 15:40:21 2017 +0200
+
+    name changes and version
+
+[33mcommit d717737ecbc73d8f0a9d8290489e47f47a9998ed[m
+Merge: d57ffdd c926217
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Jan 30 15:32:38 2017 +0200
+
+    Merge branch 'master' of https://github.com/creativetimofficial/material-dashboard-angular
+    
+    * 'master' of https://github.com/creativetimofficial/material-dashboard-angular:
+      added copyright MIT in css and JS removed Buddha Bless code
+      small changes in documentation + added LICENSE.md
+
+[33mcommit c9262178037513818b6eb3638a429e6e79fb00ff[m
+Author: Axelut <axelut@me.com>
+Date:   Mon Jan 30 14:53:42 2017 +0200
+
+    added copyright MIT in css and JS
+    removed Buddha Bless code
+
+[33mcommit b19b2c02334b94aed0fc734158c080595dad3916[m
+Merge: 109bf48 d57ffdd
+Author: Axelut <axelut@me.com>
+Date:   Mon Jan 30 14:45:07 2017 +0200
+
+    Merge branch 'master' of https://github.com/creativetimofficial/material-dashboard-angular
+    
+    * 'master' of https://github.com/creativetimofficial/material-dashboard-angular:
+      Added arrive.js + fixed checkbox
+
+[33mcommit 109bf48cd4d82ba5c7cc68a411220cc89b6da896[m
+Author: Axelut <axelut@me.com>
+Date:   Mon Jan 30 14:45:00 2017 +0200
+
+    small changes in documentation + added LICENSE.md
+
+[33mcommit d57ffdd720052d562da0cb3a284019a5140987e6[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Jan 30 13:52:20 2017 +0200
+
+    Added arrive.js + fixed checkbox
+
+[33mcommit 67dba624823bd9fea5a38202badc0f480032a193[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Mon Jan 30 11:41:23 2017 +0200
+
+    Added animations on routes
+
+[33mcommit 44f49deeab3d34ca5151e3442a223f61d75a2b1f[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Jan 20 17:16:59 2017 +0200
+
+    Small changes on documentation
+
+[33mcommit 1ae7bd5ab2daa6dca9d802abceede61ff3129a09[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Jan 20 16:26:55 2017 +0200
+
+    add form-black to search input
+
+[33mcommit 5fce84c5e82e54165e2bd895b321ba16f9b916aa[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Jan 20 15:36:30 2017 +0200
+
+    Fixed navbar title
+
+[33mcommit 2d1e0cdb52f573469ed850947acc7584a838ffd1[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Jan 20 14:41:33 2017 +0200
+
+    Changed color on form-control
+
+[33mcommit 7ecf89f6a067b326303f23953665b8475d3420ef[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Jan 20 12:54:43 2017 +0200
+
+    Change colour purple in red
+
+[33mcommit 458e6b388c274485d7b10bcde867b7cf2c42c2fa[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Wed Jan 18 11:28:27 2017 +0200
+
+    Small changes on file structure
+
+[33mcommit 468897ae702f9a434554cba2fd4a07fd255e89b7[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Jan 13 12:18:43 2017 +0200
+
+    Small changes
+
+[33mcommit 89720fb5357c479d2280ed70ff7ece9eb1d12f99[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Jan 13 12:07:32 2017 +0200
+
+    Repaired sidebar on responsive
+
+[33mcommit 75600c0c5a6c8b02efa977e35a6369c7416137a1[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Fri Jan 13 11:35:28 2017 +0200
+
+    Added animation for menu button on responsive
+
+[33mcommit cc6511c31c0ebd9e8f01498330135e307a8fa33c[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Thu Jan 12 13:41:00 2017 +0200
+
+    Small changes
+
+[33mcommit e1241691d381ed7fcc2720d6b96cfd7a5bac67fc[m
+Author: chelaruc <chelaru_ciprian@yahoo.com>
+Date:   Thu Jan 12 13:40:11 2017 +0200
+
+    working moving tab on back button

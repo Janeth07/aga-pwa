@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import {AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument} from '@angular/fire/firestore'
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
-import {Corrales} from '../interfaces/corrales.interface';
+import {Corrales, CategoriaAnimal} from '../interfaces/corrales.interface';
+
 
 @Injectable({
   providedIn: 'root'
@@ -33,8 +34,10 @@ export class CorralesService {
      }));
    }
 
-   updateCorrales(corral:Corrales): void{
+   updateCorrales(corral:Corrales,,categorias:CategoriaAnimal): void{
+
      let id=corral.id;
+     corral.aloja=categorias;
      this.corralDoc=this.afs.doc<Corrales>(`corrales/${id}`);
     this.corralDoc.update(corral);
    }
@@ -42,10 +45,10 @@ export class CorralesService {
    deleteCorral(id:string): void{
      this.corralDoc=this.afs.doc<Corrales>(`corrales/${id}`);
      this.corralDoc.delete();
-
    }
 
-   addCorral(corral:any){
-return this.corralesCollection.add(corral);
+   addCorral(corral:Corrales,categorias:CategoriaAnimal){     
+     corral.aloja=categorias;
+     return this.corralesCollection.add(corral);
    }
 }

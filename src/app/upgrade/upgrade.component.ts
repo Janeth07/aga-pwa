@@ -55,4 +55,5 @@ public corral='';
     this.corralesService.selectCorral=Object.assign({},corral);
   }
   
+ 
 }

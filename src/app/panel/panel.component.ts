@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import * as Chartist from 'chartist';
 
 @Component({
-  selector: 'app-dashboard-ganadero',
-  templateUrl: './dashboard-ganadero.component.html',
-  styleUrls: ['./dashboard-ganadero.component.scss']
+  selector: 'app-panel',
+  templateUrl: './panel.component.html',
+  styleUrls: ['./panel.component.css']
 })
-export class DashboardGanaderoComponent implements OnInit {
+export class PanelComponent implements OnInit {
 
   constructor() { }
   startAnimationForLineChart(chart){

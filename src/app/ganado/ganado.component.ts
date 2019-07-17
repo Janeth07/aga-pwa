@@ -4,11 +4,11 @@ import {Borregas} from '../interfaces/borregas.interface';
 import {NgForm} from '@angular/forms';
 
 @Component({
-  selector: 'app-maps',
-  templateUrl: './maps.component.html',
-  styleUrls: ['./maps.component.scss']
+  selector: 'app-ganado',
+  templateUrl: './ganado.component.html',
+  styleUrls: ['./ganado.component.scss']
 })
-export class MapsComponent implements OnInit {
+export class GanadoComponent implements OnInit {
 
   constructor(public borregasService: BorregasService) { }
   @ViewChild ('btnClose') btnClose : ElementRef;

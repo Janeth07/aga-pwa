@@ -81,7 +81,7 @@
                               </select>
                               <div class="form-check form-check-radio form-check-inline">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Hembra"
+                                    <input class="form-check-input" type="radio"  id="inlineRadio1" value="Hembra"
                                     name="genero" [(ngModel)]="this.borregasService.selectBorrega.genero" checked> Hembra
                                     <span class="circle">
                                         <span class="check"></span>
@@ -90,24 +90,29 @@
                                 </div>
                                 <div class="form-check form-check-radio form-check-inline">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Macho"
+                                    <input class="form-check-input" type="radio"  id="inlineRadio2" value="Macho"
                                     name="genero" [(ngModel)]="this.borregasService.selectBorrega.genero"> Macho
                                     <span class="circle">
                                         <span class="check"></span>
                                     </span>
                                   </label>
-                                </div>
+                           </div>
+                           
                         </div>
                 </div>
                 
                 </div>
+          
                   </div>
+        
+              
                   <div class="modal-footer">
                       <button type="button"  type="submit" class="btn btn-danger btn-round">
                           <i class="material-icons">
                               arrow_forward_ios</i> Siguiente
                         </button>
                    </div>
+                
               </form>
          </div>
         
@@ -151,7 +156,7 @@
                              <p>Genero:</p>
                          </div>
                          <div class="col">
-                         <select class="custom-select mr-sm-2 mb-1" id="inlineFormCustomSelect" name="raza" [(ngModel)]="this.borregasService.selectBorrega.raza">
+                         <select class="custom-select" id="inlineFormCustomSelect" name="raza" [(ngModel)]="this.borregasService.selectBorrega.raza">
                              <option value="Dorper">Dorper</option>
                              <option value="*">*</option>
                              <option value="*">*</option>
@@ -184,6 +189,7 @@
                                      </span>
                                    </label>
                                  </div>
+                                 <div></div>
                          </div>
                  </div>
                  
@@ -203,7 +209,7 @@
     </div>
 
     <div class="row">
-  <div class="card mb-3 sm-6 mr-3" style="max-width: 348px;" *ngFor="let borrega of borregas">
+  <div class="card mb-3 sm-6 mr-3" style="max-width: 340px;" *ngFor="let borrega of borregas">
     <div class="row no-gutters">
       <div class="col-md-4 my-3">
         <img src="./assets/img/icons8_Sheep_96px.png" class="card-img" alt="...">

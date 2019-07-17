@@ -17,7 +17,10 @@
             <button class="btn btn-danger btn-round float-right" (click)="resetChecks(formCorral)"  data-toggle="modal" data-target="#signupModal">
                 <i class="material-icons">add_circle</i>
                 Registrar nuevo corral
-            </button>            
+            </button>  
+            <br>
+            <br>
+            <br>          
             <div class="modal fade" id="signupModal" tabindex="-1" role="dialog">
               <div class="modal-dialog modal-signup" role="document">
                 <div class="modal-content">
@@ -111,7 +114,7 @@
             </div>
             <!--<a class="nav-link text-right font-weight-bold btn-link" ><u>Nuevo corral</u></a>-->
             <div class="row">
-                <div  class="card mb-3 sm-6 mr-auto ml-auto" style="max-width: 348px;" *ngFor="let corral of corrales"> 
+                <div  class="card mb-3 sm-6 mr-3" style="max-width: 340px;" *ngFor="let corral of corrales"> 
                     <div class="row no-gutters">
                       <div class="col-md-4 my-3">
                         <img src="../../assets/img/icons8_Cement_Kiln_32px.png" class="card-img" alt="...">

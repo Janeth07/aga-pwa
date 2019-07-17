@@ -4,15 +4,15 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminLayoutRoutes } from './admin-layout.routing';
 
-import { DashboardComponent } from '../../dashboard/dashboard.component';
-import { UserProfileComponent } from '../../user-profile/user-profile.component';
-import { TableListComponent } from '../../table-list/table-list.component';
+import { PanelComponent } from '../../panel/panel.component';
+import { GanaderosComponent } from '../../ganaderos/ganaderos.component';
+import { RegistrarComponent } from '../../registrar/registrar.component';
 import { TypographyComponent } from '../../typography/typography.component';
 import { IconsComponent } from '../../icons/icons.component';
-import { MapsComponent } from '../../maps/maps.component';
+import { GanadoComponent } from '../../ganado/ganado.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
-import { UpgradeComponent } from '../../upgrade/upgrade.component';
-import { DashboardGanaderoComponent } from 'app/dashboard-ganadero/dashboard-ganadero.component';
+import { CorralesComponent } from '../../corrales/corralescomponent';
+import { PanelGanaderoComponent } from 'app/panel-ganadero/panel-ganadero.component';
 import { AnalisisComponent } from './../../analisis/analisis.component';
 import { ReportesComponent } from './../../reportes/reportes.component';
 import { MarketComponent } from './../../market/market.component';
@@ -40,15 +40,15 @@ import {
     MatTooltipModule,
   ],
   declarations: [
-    DashboardComponent,
-    UserProfileComponent,
-    TableListComponent,
+    PanelComponent,
+    GanaderosComponent,
+    RegistrarComponent,
     TypographyComponent,
     IconsComponent,
-    MapsComponent,
+    GanadoComponent,
     NotificationsComponent,
-    UpgradeComponent,
-    DashboardGanaderoComponent,
+    CorralesComponent,
+    PanelGanaderoComponent,
     AnalisisComponent,
     ReportesComponent,
     MarketComponent,

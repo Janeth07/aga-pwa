@@ -15,4 +15,5 @@ export interface Borregas{
     raza?:string,
     estado?:string,
     corral?:number,
+    tipo?: string,
     }

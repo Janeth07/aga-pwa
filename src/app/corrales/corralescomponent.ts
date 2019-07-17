@@ -2,14 +2,14 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import {CorralesService} from '../services/corrales.service';
 import {Corrales} from '../interfaces/corrales.interface';
 import {NgForm} from '@angular/forms';
-import { CategoriaAnimal } from './../interfaces/corrales.interface';
+import { CategoriaAnimal } from '../interfaces/corrales.interface';
 
 @Component({
-  selector: 'app-upgrade',
-  templateUrl: './upgrade.component.html',
-  styleUrls: ['./upgrade.component.css']
+  selector: 'app-corrales',
+  templateUrl: './corrales.component.html',
+  styleUrls: ['./corrales.component.css']
 })
-export class UpgradeComponent implements OnInit {
+export class CorralesComponent implements OnInit {
 
   checks:CategoriaAnimal={destete:false,vientre:false,semental:false,coordero:false};
   constructor(public corralesService: CorralesService) { }

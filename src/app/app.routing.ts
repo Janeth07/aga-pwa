@@ -13,9 +13,10 @@ import { GanaderosComponent } from './ganaderos/ganaderos.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { TypographyComponent } from './typography/typography.component';
 import { IconsComponent } from './icons/icons.component';
+
 import { GanadoComponent } from './ganado/ganado.component';
-import { NotificationsComponent } from './notifications/notifications.component';
 import { CorralesComponent } from './corrales/corralescomponent';
+import { DietasComponent } from './dietas/dietas.component';
 
 const routes: Routes =[
   {

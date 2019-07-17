@@ -2,6 +2,7 @@ import { Component, OnInit,ViewChild, ElementRef } from '@angular/core';
 import {BorregasService} from '../services/borregas.service';
 import {Borregas} from '../interfaces/borregas.interface';
 import {NgForm} from '@angular/forms';
+import {CorralesService} from '../services/corrales.service';
 
 @Component({
   selector: 'app-ganado',
@@ -10,15 +11,20 @@ import {NgForm} from '@angular/forms';
 })
 export class GanadoComponent implements OnInit {
 
-  constructor(public borregasService: BorregasService) { }
+  constructor(public borregasService: BorregasService, public CorralesService : CorralesService) { }
   @ViewChild ('btnClose') btnClose : ElementRef;
   public borregas=[];
   public borrega='';
+  public corrales=[];
 
   ngOnInit() {
     this.borregasService.getBorregas().subscribe(borregas => {
       console.log('BORREGAS', borregas);
       this.borregas=borregas;
+     })
+     this.CorralesService.getCorrales().subscribe(corrales => {
+      console.log('CORRALES', corrales);
+      this.corrales=corrales;
      })
   }
 

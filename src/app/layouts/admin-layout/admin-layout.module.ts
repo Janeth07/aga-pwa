@@ -9,10 +9,13 @@ import { GanaderosComponent } from '../../ganaderos/ganaderos.component';
 import { RegistrarComponent } from '../../registrar/registrar.component';
 import { TypographyComponent } from '../../typography/typography.component';
 import { IconsComponent } from '../../icons/icons.component';
+
 import { GanadoComponent } from '../../ganado/ganado.component';
-import { NotificationsComponent } from '../../notifications/notifications.component';
+
 import { CorralesComponent } from '../../corrales/corralescomponent';
 import { PanelGanaderoComponent } from 'app/panel-ganadero/panel-ganadero.component';
+import { DietasComponent } from '../../dietas/dietas.component';
+
 import { AnalisisComponent } from './../../analisis/analisis.component';
 import { ReportesComponent } from './../../reportes/reportes.component';
 import { MarketComponent } from './../../market/market.component';
@@ -45,10 +48,10 @@ import {
     RegistrarComponent,
     TypographyComponent,
     IconsComponent,
-    GanadoComponent,
-    NotificationsComponent,
+    GanadoComponent,    
     CorralesComponent,
     PanelGanaderoComponent,
+    DietasComponent,
     AnalisisComponent,
     ReportesComponent,
     MarketComponent,

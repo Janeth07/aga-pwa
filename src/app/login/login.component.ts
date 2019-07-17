@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'app/auth.service';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { Router } from '@angular/router';
+import { resetComponentState } from '@angular/core/src/render3/instructions';
 
 @Component({
   selector: 'app-login',
@@ -47,6 +48,7 @@ Onlogin():void{
   console.log('password', this.password);
 this.authService.loginEmailUser(this.email,this.password).then((res)=>{
  this.router.navigate(['dashboard']);
-}).catch(err=> console.log('err',err.message));
+//}).catch(err=> console.log('err',err.message));
+}).catch (err=> alert('Correo o contraseña invalida'));
 }
 }

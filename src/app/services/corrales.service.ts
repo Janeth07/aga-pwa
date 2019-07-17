@@ -34,7 +34,7 @@ export class CorralesService {
      }));
    }
 
-   updateCorrales(corral:Corrales,,categorias:CategoriaAnimal): void{
+   updateCorrales(corral:Corrales,categorias:CategoriaAnimal): void{
 
      let id=corral.id;
      corral.aloja=categorias;

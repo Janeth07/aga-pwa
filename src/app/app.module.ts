@@ -15,13 +15,13 @@ import { ComponentsModule } from './components/components.module';
 import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { TableListComponent } from './table-list/table-list.component';
+import { PanelComponent } from './panel/panel.component';
+import {GanaderosComponent} from './ganaderos/ganaderos.component';
+import { RegistrarComponent } from './registrar/registrar.component';
 import { TypographyComponent } from './typography/typography.component';
 import { IconsComponent } from './icons/icons.component';
 import { NotificationsComponent } from './notifications/notifications.component';
-import { UpgradeComponent } from './upgrade/upgrade.component';
+import { CorralesComponent } from './corrales/corralescomponent';
 import {AgmCoreModule} from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { LoginComponent } from './login/login.component';
@@ -30,7 +30,8 @@ import { RestauracionComponent } from './restauracion/restauracion.component';
 
 @NgModule({
   imports: [
-  BrowserAnimationsModule,
+ 
+BrowserAnimationsModule,
     FormsModule,
     HttpModule,
     HttpClientModule,

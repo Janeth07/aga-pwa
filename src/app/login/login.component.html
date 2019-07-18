@@ -1,3 +1,6 @@
+
+
+
 <div class="main-content mt-2 pt-3 ">
   <div class="container-fluid">
     <div class="row">
@@ -32,8 +35,10 @@
             />
           </div>
           <button class="btn btn-danger btn-sm btn-block" type="submit">Ingresar</button>
-          
           <div class="checkbox text-center">
+              <div *ngIf="loading" class="text-center my-6">
+                  <img src="../../assets/img/loading.gif" width="64px">
+                  </div>
             <label> <input type="checkbox" />Mantener sesión Iniciada </label>
           </div>
           <a routerLink="restauracion"

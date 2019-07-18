@@ -19,7 +19,7 @@ export const ROUTES: RouteInfo[] = [
 export const ROUTES_GAN: RouteInfo[] = [
 
     { path: '/dashboard_ganadero', title: 'Panel',  icon: 'pie_chart', class: '' },
-    { path: '/ganado', title: 'Ganado',  icon: 'pie_chart', class: '' },    
+    { path: '/ganado', title: 'Ganado',  icon: 'ballot', class: '' },    
     { path: '/dietas', title: 'Dietas',  icon:'description', class: '' },
     { path: '/corrales', title: 'Corrales',  icon:'view_module', class: '' },
     { path: '/registrar', title: 'Registrar',  icon:'list_alt', class: '' },    

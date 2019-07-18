@@ -10,9 +10,12 @@ import { CategoriaAnimal } from '../interfaces/corrales.interface';
   styleUrls: ['./corrales.component.css']
 })
 export class CorralesComponent implements OnInit {
+public loading:boolean;
 
   checks:CategoriaAnimal={destete:false,vientre:false,semental:false,coordero:false};
-  constructor(public corralesService: CorralesService) { }
+  constructor(public corralesService: CorralesService) {
+    this.loading=true;
+   }
 @ViewChild ('btnClose') btnClose : ElementRef;
 public corrales=[];
 public corral='';
@@ -21,6 +24,7 @@ public corral='';
     this.corralesService.getCorrales().subscribe(corrales => {
      console.log('CORRALES', corrales);
      this.corrales=corrales;
+     this.loading=false;
     })
   }
   resetChecks(corralForm:NgForm){

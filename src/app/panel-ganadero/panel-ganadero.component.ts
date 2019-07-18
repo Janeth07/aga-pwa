@@ -7,8 +7,11 @@ import * as Chartist from 'chartist';
   styleUrls: ['./panel-ganadero.component.scss']
 })
 export class PanelGanaderoComponent implements OnInit {
+public loading: boolean;
 
-  constructor() { }
+  constructor() {
+    this.loading=true;
+   }
   startAnimationForLineChart(chart){
       let seq: any, delays: any, durations: any;
       seq = 0;
@@ -74,6 +77,7 @@ export class PanelGanaderoComponent implements OnInit {
               [12, 17, 7, 17, 23, 18, 38]
           ]
       };
+      this.loading=false;
 
      const optionsDailySalesChart: any = {
           lineSmooth: Chartist.Interpolation.cardinal({

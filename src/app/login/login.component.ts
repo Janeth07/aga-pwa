@@ -11,9 +11,12 @@ import { resetComponentState } from '@angular/core/src/render3/instructions';
 })
 export class LoginComponent implements OnInit {
 user:firebase.User;
-  
+ public loading:boolean;
 
-  constructor(private service: AuthService, public afAuth: AngularFireAuth, private router: Router, private authService:AuthService) { }
+
+  constructor(private service: AuthService, public afAuth: AngularFireAuth, private router: Router, private authService:AuthService) {
+   this.loading=false;
+   }
 public email : string = '';
 public password : string = '';
 
@@ -22,11 +25,13 @@ public password : string = '';
       console.log(user);
       this.user = user;
     });
-  }
+  
+   } 
 
 loginG(){
   console.log('Login...');
   this.service.login();
+ 
 }
 
 logout(){
@@ -36,6 +41,7 @@ logout(){
 emailSignUp(){
   console.log('Login...');
   this.service.verifyEmail();
+  
 }
 onlogininGoogle() : void {
   this.authService.loginGoogleUser().then((res)=>{
@@ -46,9 +52,14 @@ onlogininGoogle() : void {
 Onlogin():void{
   console.log('email', this.email);
   console.log('password', this.password);
+   this.loading=true;
 this.authService.loginEmailUser(this.email,this.password).then((res)=>{
  this.router.navigate(['dashboard']);
 //}).catch(err=> console.log('err',err.message));
-}).catch (err=> alert('Correo o contraseña invalida'));
+}).catch (err=> { 
+  this.loading=false;
+  alert('Correo o contraseña invalida');
+});
+
 }
 }

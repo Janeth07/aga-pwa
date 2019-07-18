@@ -15,6 +15,7 @@
 
 <div class="main-content">
         <div class="card card-nav-tabs">
+            
                 <div class="card-header card-header-danger">
                     <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
                     <div class="nav-tabs-navigation">
@@ -36,7 +37,8 @@
                             </ul>
                         </div>
                     </div>
-                </div><div class="card-body ">
+                </div>
+                <div class="card-body ">
                     <div class="tab-content text-center">
                         <div class="tab-pane active" id="peso">
                             <div>
@@ -45,21 +47,37 @@
                                        </button>
                                        <br>
                                     </div>
+                                 
                             <div class="row">
-                                <div class="card mb-5 sm-6 mr-5 ml-auto" style="max-width: 348px;">
+
+                                <div class="card mb-5 sm-6 mr-5 ml-auto" style="max-width: 348px;" >
+                                       
+                                 <div type="text" name="id" [(ngModel)]="this.registarService.selectregistar.id"></div>
+                                 <form #formregistar="ngForm" (ngSubmit)="saveRegistar(formregistar)">
                                     <div class="ml-2">
                                       <div class="col-md-11">
-                                            <input type="text" class="form-control" placeholder="Arete">
-                                            <input type="text" class="form-control" placeholder="Peso">
-                                      </div>  
-                                      <button class="btn btn-danger btn-round ml-auto">
-                                            <i class="material-icons">done</i> Comentar
-                                           </button>
-                                           <button class="btn btn-danger btn-round mr-auto">
-                                                <i class="material-icons">done</i>Registrar
+                                            <input type="text" class="form-control" placeholder="Arete" name="arete" [(ngModel)]="this.registarService.selectregistar.arete"  >
+                                            <input type="text" class="form-control" placeholder="Peso" name="peso" [(ngModel)]="this.registarService.selectregistar.peso">
+                                             <input type="hidden" name="comentario" [(ngModel)]="this.registarService.selectregistar.comentario">
+                                              </div>
+                                        
+                                            
+                                             <button class="btn btn-danger btn-round ml-auto" type="button" (click)="myFunction()">
+                                                <i class="material-icons">done</i> Comentar
+                                             </button>
+                                            
+                                             
+                                           <button class="btn btn-danger btn-round mr-auto" type="submit"> 
+                                                <i class="material-icons" >done</i>Registrar
                                                </button>
+                                               
                                     </div>
-                                  </div>
+                                </form>
+                                    </div>
+                              
+                        
+                        
+                                  
         
                                   <div class="card mb-5 sm-6 mr-auto" style="max-width: 348px;">
                                     <div class="row no-gutters">
@@ -77,8 +95,9 @@
                                       </div>  
                                     </div>
                                   </div>
-        
-                                  <div class="card-body col-md-12">
+                       
+                                  
+                                  <div class="card-body col-md-12" >
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class=" text-danger">
@@ -90,28 +109,23 @@
                                                 </th>
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                <tr *ngFor="let registro of registar">
                                                     <td>
-                                                        1234
+                                                        {{registro.arete}}
                                                     </td>
                                                     <td>
-                                                        56 Kg
+                                                        {{registro.peso}} Kg
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>
-                                                        2712
-                                                    </td>
-                                                    <td>
-                                                        128 Kg
-                                                    </td>
+                                               
                                             </tbody>
                                         </table>
                                     </div>
-                                </div>
-        </div>              
-        
+                            </div>
                         </div>
+                 
+        
+                        
                         <div class="tab-pane" id="revision">
                            
                         </div>
@@ -123,5 +137,8 @@
                         </div>
                     </div>
 </div>
+
+</div>
+
 
 

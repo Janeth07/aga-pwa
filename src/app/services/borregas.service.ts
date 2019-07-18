@@ -46,6 +46,12 @@ export class BorregasService {
    }
 
    addBorrega(borrega:any){
+     borrega.fecha_baja = new Date(borrega.fecha_baja).getTime();
+     borrega.fecha_alta = new Date(borrega.fecha_alta).getTime();
+     borrega.fecha_nac = new Date(borrega.fecha_nac).getTime();
+     
+     
+
 return this.borregasCollection.add(borrega);
    }
 }

@@ -1,10 +1,10 @@
 export interface Borregas{
     id?:string,
     arete?:number,
-    fecha_baja?:Date,
-    fecha_entrada?:Date,
-    fecha_nac?: Date,
-    fecha_salida?: Date,
+    fecha_baja?:number,
+    fecha_entrada?:number,
+    fecha_nac?: number,
+    fecha_salida?: number,
     genero?: string;
     num_partos?: number,
     peso_actual?:number,

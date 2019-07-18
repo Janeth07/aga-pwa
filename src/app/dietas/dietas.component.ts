@@ -13,12 +13,14 @@ import { Ingredientes } from 'app/interfaces/ingredientes.interface';
   styleUrls: ['./dietas.component.css']
 })
 export class DietasComponent implements OnInit {
-  
+  public loading:boolean;
+
   corralesID:string[];
   checks:string[]=[];
   fg:FormGroup;
   constructor(public dietasService: DietasService,public cs :CorralesService) {
-   
+   this.loading=true;
+
   }
   @ViewChild ('btnClose') btnClose : ElementRef;
   public dietas=[];
@@ -33,6 +35,8 @@ export class DietasComponent implements OnInit {
     this.dietasService.getDietas().subscribe(dietas => {
       console.log('DIETAS', dietas);
       this.dietas=dietas;
+      this.loading=false;
+
      })
      this.cs.getCorrales().subscribe(corrales => {
        // tslint:disable-next-line: no-unused-expression

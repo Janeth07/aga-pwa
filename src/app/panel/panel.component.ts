@@ -7,8 +7,11 @@ import * as Chartist from 'chartist';
   styleUrls: ['./panel.component.css']
 })
 export class PanelComponent implements OnInit {
+public loading: boolean;
 
-  constructor() { }
+  constructor() {
+    this.loading=true;
+   }
   startAnimationForLineChart(chart){
       let seq: any, delays: any, durations: any;
       seq = 0;
@@ -67,7 +70,7 @@ export class PanelComponent implements OnInit {
   };
   ngOnInit() {
       /* ----------==========     Daily Sales Chart initialization For Documentation    ==========---------- */
-
+      this.loading=false;
       const dataDailySalesChart: any = {
           labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
           series: [
@@ -145,6 +148,7 @@ export class PanelComponent implements OnInit {
 
       //start animation for the Emails Subscription Chart
       this.startAnimationForBarChart(websiteViewsChart);
+      
   }
 
 }

@@ -11,14 +11,18 @@ import { Ganaderos } from './../interfaces/ganaderos.interface';
   styleUrls: ['./ganaderos.component.css']
 })
 export class GanaderosComponent implements OnInit {
+public loading:boolean;
 
-  constructor(public ganaderosService: GanaderosService) { }
+  constructor(public ganaderosService: GanaderosService) { 
+    this.loading=true;
+  }
   public ganaderos=[];
   public ganadero='';
   ngOnInit() {
     this.ganaderosService.getGanaderos().subscribe(ganaderos => {
       console.log('Ganaderos', ganaderos);
       this.ganaderos=ganaderos;
+      this.loading=false;
      })
   }
   saveGanadero(ganaderoForm:NgForm): void{

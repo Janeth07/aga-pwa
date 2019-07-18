@@ -10,8 +10,11 @@ import {CorralesService} from '../services/corrales.service';
   styleUrls: ['./ganado.component.scss']
 })
 export class GanadoComponent implements OnInit {
+  public loading:boolean;
 
-  constructor(public borregasService: BorregasService, public CorralesService : CorralesService) { }
+  constructor(public borregasService: BorregasService, public CorralesService : CorralesService) { 
+    this.loading=true;
+  }
   @ViewChild ('btnClose') btnClose : ElementRef;
   public borregas=[];
   public borrega='';
@@ -21,7 +24,9 @@ export class GanadoComponent implements OnInit {
     this.borregasService.getBorregas().subscribe(borregas => {
       console.log('BORREGAS', borregas);
       this.borregas=borregas;
+      this.loading=false;
      })
+     
      this.CorralesService.getCorrales().subscribe(corrales => {
       console.log('CORRALES', corrales);
       this.corrales=corrales;

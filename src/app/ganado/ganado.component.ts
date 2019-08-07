@@ -35,6 +35,7 @@ export class GanadoComponent implements OnInit {
 
   saveBorrega(borregaForm:NgForm): void{
     if(borregaForm.value.id==null){
+      
       this.borregasService.addBorrega(borregaForm.value);
     }
     else{

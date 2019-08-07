@@ -80,9 +80,7 @@
                               <option value="?">?</option>
                             </select>
                             <select class="custom-select mr-sm-2 mb-1" id="" name="corral" [(ngModel)]="this.borregasService.selectBorrega.corral">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                              <option *ngFor="let corral of corrales">#{{corral.numero}}</option>
                               </select>
                               <div class="form-check form-check-radio form-check-inline">
                                   <label class="form-check-label">

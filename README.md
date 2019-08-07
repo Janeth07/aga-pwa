@@ -1,183 +1,96 @@
-# [Material Dashboard Angular - Free Bootstrap Material Design Admin](https://www.creative-tim.com/product/material-dashboard-angular2)[![version][version-badge]][CHANGELOG]
+# Diseño, Desarrollo e Implemntación de una PWA en Angular 7
 
-![alt text](http://s3.amazonaws.com/creativetim_bucket/products/53/original/opt_md_angular_thumbnail.jpg "Material Dashboard Angular Free")
+_La PWA será un producto que trabajará en un entorno empresarial, fungirá como complemento de la pesa y la Aplicación Móvil. La PWA sera utilizada para la gestión de ganado, sus dietas, sus pesos, su histórico, así como la administración de usuarios involucrados en el proceso como lo son ganadero y administrador de la plataforma._
 
-**[Material Dashboard Angular](https://www.creative-tim.com/product/material-dashboard-angular2/)** is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts through an easy to use and beautiful set of components. Material Dashboard was built over the popular Bootstrap framework and it comes with a couple of third-party plugins redesigned to fit in with the rest of the elements.
+## Comenzando 🚀
 
-Material Dashboard makes use of light, surface and movement. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left sidebar and the content is on the right inside the main panel.
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-This product came as a result of users asking for a material dashboard after we released our successful [Material Kit](http://www.creative-tim.com/product/material-kit). We developed it based on your feedback and it is a powerful bootstrap admin dashboard, which allows you to build products like admin panels, content managements systems and CRMs.
+Mira **Deployment** para conocer como desplegar el proyecto.
 
-Material Dashboard comes with 5 color filter choices for both the sidebar and the card headers (blue, green, orange, red and purple) and an option to have a background image on the sidebar.
 
-Material Dashboard uses a framework built by our friend [Federico - Bootstrap Material Design](http://fezvrasta.github.io/bootstrap-material-design/), who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to his team for the effort and forward thinking they put into it.
+### Pre-requisitos 📋
 
-Special thanks go to:
-[Robert McIntosh](https://github.com/mouse0270/bootstrap-notify) for the notification system.
-[Chartist](https://gionkunz.github.io/chartist-js/) for the wonderful charts.
-We are very excited to share this dashboard with you and we look forward to hearing your feedback!
+_El equipo en el que se supone que se va a descargar el proyecto deberá  tener acceso al reposotorio,instalar NodeJs y un editor de código._
 
-You can find the Github Repo here.
 
-## Links:
+### Instalación 🔧
 
-+ [Live Preview](https://www.creative-tim.com/product/material-dashboard-angular2)
-+ [Material Kit - For Front End Development](http://www.creative-tim.com/product/material-kit?ref=github-md-angular)
+_Para descargar el repositorio remoto deberás realizar un fork al siguinete proyecto de GitHub [aga-pwa](https://github.com/olara1989/aga-pwa)_
 
-## Quick start
-
-Quick start options:
-
-- [Download from Github](https://github.com/tiniestory/material-dashboard-angular2/archive/master.zip).
-- [Download from Creative Tim](http://www.creative-tim.com/product/material-dashboard-angular2).
-
-## Terminal Commands
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0 and angular 4.x.
-
-1. Install NodeJs from [NodeJs Official Page](https://nodejs.org/en).
-2. Open Terminal
-3. Go to your file project
-4. Make sure you have installed [Angular CLI](https://github.com/angular/angular-cli) already. If not, please install.
-5. Run in terminal: ```npm install```
-6. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-### What's included
-
-Within the download you'll find the following directories and files:
+_Despues tendrás que ejecutar el siguiente comando desde la terminal para poder descargar el repositorio de manera local._
 
 ```
-material-dashboard-angular
-├── CHANGELOG.md
-├── LICENSE.md
-├── README.md
-├── angular-cli.json
-├── documentation
-├── e2e
-├── karma.conf.js
-├── package-lock.json
-├── package.json
-├── protractor.conf.js
-├── src
-│   ├── app
-│   │   ├── app.component.css
-│   │   ├── app.component.html
-│   │   ├── app.component.spec.ts
-│   │   ├── app.component.ts
-│   │   ├── app.module.ts
-│   │   ├── app.routing.ts
-│   │   ├── components
-│   │   │   ├── components.module.ts
-│   │   │   ├── footer
-│   │   │   │   ├── footer.component.css
-│   │   │   │   ├── footer.component.html
-│   │   │   │   ├── footer.component.spec.ts
-│   │   │   │   └── footer.component.ts
-│   │   │   ├── navbar
-│   │   │   │   ├── navbar.component.css
-│   │   │   │   ├── navbar.component.html
-│   │   │   │   ├── navbar.component.spec.ts
-│   │   │   │   └── navbar.component.ts
-│   │   │   └── sidebar
-│   │   │       ├── sidebar.component.css
-│   │   │       ├── sidebar.component.html
-│   │   │       ├── sidebar.component.spec.ts
-│   │   │       └── sidebar.component.ts
-│   │   ├── dashboard
-│   │   │   ├── dashboard.component.css
-│   │   │   ├── dashboard.component.html
-│   │   │   ├── dashboard.component.spec.ts
-│   │   │   └── dashboard.component.ts
-│   │   ├── icons
-│   │   │   ├── icons.component.css
-│   │   │   ├── icons.component.html
-│   │   │   ├── icons.component.spec.ts
-│   │   │   └── icons.component.ts
-│   │   ├── layouts
-│   │   │   └── admin-layout
-│   │   │       ├── admin-layout.component.html
-│   │   │       ├── admin-layout.component.scss
-│   │   │       ├── admin-layout.component.spec.ts
-│   │   │       ├── admin-layout.component.ts
-│   │   │       ├── admin-layout.module.ts
-│   │   │       └── admin-layout.routing.ts
-│   │   ├── maps
-│   │   │   ├── maps.component.css
-│   │   │   ├── maps.component.html
-│   │   │   ├── maps.component.spec.ts
-│   │   │   └── maps.component.ts
-│   │   ├── notifications
-│   │   │   ├── notifications.component.css
-│   │   │   ├── notifications.component.html
-│   │   │   ├── notifications.component.spec.ts
-│   │   │   └── notifications.component.ts
-│   │   ├── table-list
-│   │   │   ├── table-list.component.css
-│   │   │   ├── table-list.component.html
-│   │   │   ├── table-list.component.spec.ts
-│   │   │   └── table-list.component.ts
-│   │   ├── typography
-│   │   │   ├── typography.component.css
-│   │   │   ├── typography.component.html
-│   │   │   ├── typography.component.spec.ts
-│   │   │   └── typography.component.ts
-│   │   ├── upgrade
-│   │   │   ├── upgrade.component.css
-│   │   │   ├── upgrade.component.html
-│   │   │   ├── upgrade.component.spec.ts
-│   │   │   └── upgrade.component.ts
-│   │   └── user-profile
-│   │       ├── user-profile.component.css
-│   │       ├── user-profile.component.html
-│   │       ├── user-profile.component.spec.ts
-│   │       └── user-profile.component.ts
-│   ├── assets
-│   │   ├── css
-│   │   │   └── demo.css
-│   │   ├── img
-│   │   └── scss
-│   │       ├── core
-│   │       └── material-dashboard.scss
-│   ├── environments
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── main.ts
-│   ├── polyfills.ts
-│   ├── styles.css
-│   ├── test.ts
-│   ├── tsconfig.app.json
-│   ├── tsconfig.spec.json
-│   └── typings.d.ts
-├── tsconfig.json
-├── tslint.json
-└── typings
-
+git clone 
 ```
 
-## Useful Links
+_Con el siguinte comando vinculas el proyecto local con tu respositorio remoto._
 
-More products from Creative Tim: <http://www.creative-tim.com/bootstrap-themes>
+```
+git remote
+```
 
-Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
+_Una vez descargado el proyecto deberás instalar las actualizaciones de las dependencias con el comando:_
 
-Freebies: <http://www.creative-tim.com/products>
+```
+npm install
+```
 
-Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
+_Por último corres tu proyecto para que se visualice en el navegador._
 
-Social Media:
+```
+ng serve --open
+```
 
-Twitter: <https://twitter.com/CreativeTim>
+## Deployment 📦
 
-Facebook: <https://www.facebook.com/CreativeTim>
+_Para crear una llave SSH utilizamos el siguinete comando:_
 
-Dribbble: <https://dribbble.com/creativetim>
+```
+ssh-keygen
+```
+_Entras al archivo SSH_
 
-Google+: <https://plus.google.com/+CreativetimPage>
+```
+cd .ssh
+```
 
-Instagram: <https://instagram.com/creativetimofficial>
+_Ingresas al archivo id_rsa.pub_
 
-[CHANGELOG]: ./CHANGELOG.md
+```
+cd id_rsa.pub
+```
 
-[version-badge]: https://img.shields.io/badge/version-2.2.0-blue.svg
+_En tu cuenta de GitHub creas una nueva SSH Keys, en la cual pondrás un título y pegarás los carácteres que obtuviste al ingresar al archivo anterior._
+
+_Tandrás que establecer tu conexión remota con la URL de SSH._
+
+```
+git remote add origin
+```
+
+_Ahora ya pudes subir todos tus cambios al respositorio que tienes en GitHub, sin la necesidad de ingresar tu usuario y contraseña cada vez que subas cambios nuevos._
+
+## Construido con 🛠️
+
+_Las herramientas que se utilizaron para crear el proyecto son:_
+
+* [Angular 7](https://angular.io/) - Es una paltaforma que facilita la creación de aplicaciones con la Web
+* [NodeJs](https://nodejs.org/es/) - Es una Libreria
+* [Firebase](https://firebase.google.com/) - Plataforma en la nube que ofrece un conjunto de servicios
+* [Bootstrap](https://getbootstrap.com/) - Herramientas de código abierto para desarrollar con HTML, CSS y JS
+* [Material Desing](https://material.io/design/) - Lenguaje visual para el diseño
+
+
+## Wiki 📖
+
+Puedes encontrar mucho más de cómo utilizar este proyecto en el  [Manual de Usuario](https://drive.google.com/file/d/161sZdta1hEIwfGWaf3hafEkN7FM-TpFH/view?usp=sharing)
+
+
+## Autores ✒️
+
+_Las personas involucradas en la creacion del proyecto fueron:_
+
+* **Omar Emmanuel Lara Juárez** - *Líder del Proyecto, Diseñador y Programador* - [olara1989](https://github.com/olara1989)
+* **Adriana Lizeht Guardado Reyes** - *Programador* - [lizeht](https://github.com/lizeht)
+* **Alma Janeth Ibarra Palafox** - *Programador* - [Janeth07](https://github.com/Janeth07)
